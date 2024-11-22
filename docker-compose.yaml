@@ -1,0 +1,25 @@
+services:
+    telenot:
+        container_name: telenot-bridge
+        image: ghcr.io/carhensi/telenot-bridge:latest
+        restart: unless-stopped
+        environment:
+            - LOGLEVEL=${LOGLEVEL}
+            - MQTTHOST=${MQTTHOST}
+            - MQTTPORT=${MQTTPORT}
+            - MQTTUSER=${MQTTUSER}
+            - MQTTPASSWORD=${MQTTPASSWORD}
+            - TELNETHOST=${TELNETHOST}
+            - TELNETPORT=${TELNETPORT}
+            - DISCOVER=${DISCOVER}
+            - PUBLISHTOPIC=${PUBLISHTOPIC}
+            - STATETOPIC=${STATETOPIC}
+            - COMMANDTOPIC=${COMMANDTOPIC}
+            - USE_JSON_PAYLOAD=${USE_JSON_PAYLOAD}
+            - HOMEASSISTANT_AUTODISCOVERY=${HOMEASSISTANT_AUTODISCOVERY}
+            - TZ=${TZ}
+        build:
+            context: .
+            dockerfile: Dockerfile
+        volumes:
+            - .:/usr/src/app

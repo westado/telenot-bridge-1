@@ -1,0 +1,44 @@
+name: Continuous Integration (CI)
+
+on:
+    push:
+        branches:
+            - main
+            - feature/*
+    pull_request:
+        branches:
+            - main
+            - feature/*
+
+jobs:
+    test:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Check out code
+              uses: actions/checkout@v4
+
+            - name: Set up Node.js
+              uses: actions/setup-node@v4
+              with:
+                  node-version: '22'
+
+            - name: Cache Yarn dependencies
+              uses: actions/cache@v4
+              with:
+                  path: |
+                      ~/.cache/yarn
+                      node_modules
+                  key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+                  restore-keys: |
+                      ${{ runner.os }}-yarn-
+
+            - name: Setup configuration
+              run: mv src/config-example src/config
+
+            - name: Install dependencies
+              run: yarn install --frozen-lockfile
+
+            - name: Run Jest tests
+              run: yarn test
+              continue-on-error: false

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "include": ["src"],
+        "includePattern": ".+\\.m?js(doc|x)?$",
+        "excludePattern": "(^|\\/|\\\\)_"
+    },
+    "plugins": [],
+    "templates": {
+        "cleverLinks": true,
+        "monospaceLinks": true
+    },
+    "opts": {
+        "destination": "./docs",
+        "recurse": true,
+        "readme": "README.md"
+    }
+}

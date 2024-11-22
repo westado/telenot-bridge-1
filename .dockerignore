@@ -1,0 +1,15 @@
+node_modules
+npm-debug.log
+src/logs
+#src/config
+.git
+docs
+Dockerfile
+dist
+.github
+.env
+README.md
+*.log
+tests
+*.md
+.DS_Store
