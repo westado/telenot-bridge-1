@@ -1,6 +1,6 @@
 # 📟 Telenot Bridge
 
-![License](https://img.shields.io/badge/license-ISC-blue.svg)
+![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)
 ![Version](https://img.shields.io/badge/version-0.1.0-blue)
 ![Node.js CI](https://img.shields.io/badge/build-passing-brightgreen.svg)
 ![Documentation](https://img.shields.io/badge/docs-passing-brightgreen)
