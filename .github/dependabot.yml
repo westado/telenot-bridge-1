@@ -9,8 +9,6 @@ updates:
       labels:
           - 'dependencies'
           - 'auto-merge'
-      # Enable automerge for npm dependencies
-      auto-merge: true
       commit-message:
           prefix: "build"
 
@@ -22,7 +20,5 @@ updates:
       labels:
           - 'dependencies'
           - 'auto-merge'
-      # Enable automerge for GitHub Actions dependencies
-      auto-merge: true
       commit-message:
           prefix: "chore"
