@@ -92,7 +92,7 @@ docker run -i -t \
    --env-file=.env \
    -v $(pwd)/logs:/usr/src/app/logs \
    -v $(pwd)/locations:/usr/src/app/config/locations \
-   ghcr.io/carhensi/telenot:latest
+   ghcr.io/carhensi/telenot-bridge:latest
 ```
 
 ## 📡 HomeAssistant Integration
