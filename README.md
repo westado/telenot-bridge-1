@@ -36,7 +36,7 @@ Compared to the official Interface KNX 400 IP, this solution is significantly mo
 
 ```bash
 # Clone the repository
-git clone https://github.com/carhensi/telenot.git
+git clone https://github.com/carhensi/telenot-bridge.git
 
 # Navigate into the directory
 cd telenot
