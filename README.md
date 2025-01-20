@@ -50,9 +50,10 @@ yarn install
 ## 🔧 Hardware Requirement
 
 To use this package, you need an RS232 to Ethernet TCP/IP server module. Specifically:
-	•	USR-TCP232-302 Tiny - RS232 to Ethernet TCP/IP Server Module (available on Amazon)
+	•	USR-TCP232-302 Tiny - RS232 to Ethernet TCP/IP Server Module
+   •	straight-through RS-232 Cable
 
-This module allows your program to connect using a socket connection to receive data from the Telenot system. For this to work the port needs to be configured for GMS output.
+This module allows your program to connect using a socket connection to receive data from the Telenot system. The connection on the USR needs to be configured accordingly to Telenot which is 9.600 bps, 8bit size, no parity and stop bits 1 bit. Further more the RS-232 port of the Telenot needs to be configured for GMS output.
 
 ## 🔧 Configuration
 
