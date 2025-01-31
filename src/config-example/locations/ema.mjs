@@ -16,8 +16,8 @@ const ema = {
         {
             hex: '0x0',
             name: 'Home',
-            name_ha: 'Home Sicherung',
-            type: 'sicherung',
+            name_ha: 'Home Naegele',
+            type: 'naegele',
             topic: `${TOPIC_PREFIX}/home_sicherung`,
             location: 'Telenot Zentrale',
             inverted: false,
