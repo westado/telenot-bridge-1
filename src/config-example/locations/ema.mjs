@@ -4,8 +4,8 @@ const ema = {
     sicherungsbereich: [
         {
             hex: '0x0',
-            name: 'Sicherung1',
-            name_ha: 'Sicherung 1',
+            name: 'Naegele',
+            name_ha: 'Naegele',
             type: 'sicherung',
             topic: `${TOPIC_PREFIX}/sicherung1`,
             location: 'Telenot Zentrale',
