@@ -18,9 +18,9 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/carstenh/telenot-bridge.git"
+        "url": "https://github.com/westado/telenot-bridge-1.git"
     },
-    "author": "Carsten Hensiek",
+    "author": "Kristian Naegele",
     "license": "ISC",
     "dependencies": {
         "dotenv": "^16.4.7",

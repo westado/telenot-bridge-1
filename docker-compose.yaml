@@ -1,7 +1,7 @@
 services:
     telenot:
         container_name: telenot-bridge
-        image: ghcr.io/carhensi/telenot-bridge:latest
+        image: ghcr.io/westado/telenot-bridge-1:latest
         restart: unless-stopped
         environment:
             - LOGLEVEL=${LOGLEVEL}
